@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#000000"
+    tools:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="180dp"
+        android:layout_height="170dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[3]" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="279dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/roboto_black"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvOverview"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/tvOverview"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Spider-Man: Far from Home" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="526dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toEndOf="@+id/ivPoster"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        tools:text="Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent." />
+</androidx.constraintlayout.widget.ConstraintLayout>
